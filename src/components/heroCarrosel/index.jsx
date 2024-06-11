@@ -2,7 +2,7 @@ import { Carousel, Typography, Button } from "@material-tailwind/react";
 
 const HeroCarrosel = () => {
 	return (
-		<Carousel className="h-[40rem] shadow-lg overflow-hidden">
+		<Carousel autoplay={true} className="h-[40rem] shadow-lg overflow-hidden">
 			<div className="relative h-full w-full">
 				<img
 					src="https://img.odcdn.com.br/wp-content/uploads/2023/03/unnamed.jpg"

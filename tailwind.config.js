@@ -15,7 +15,7 @@ export default withMT({
         customLightBlue: '#87CEEB',
       },
       backgroundImage: {
-        'custom-hr': 'linear-gradient(to right, #4A8B30 18%, white 10%)',
+        'custom-hr': 'linear-gradient(to right, #4A8B30 20%, white 30%)',
       },
     },
   },
