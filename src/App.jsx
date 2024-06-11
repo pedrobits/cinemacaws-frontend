@@ -1,7 +1,13 @@
+import NavBar from "./components/navBar"
+import HeroCarrosel from "./components/heroCarrosel"
+import PlanExplain from "./components/planExplain"
+
 export default function App() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      CineMacaws
-    </h1>
+    <>
+      <NavBar />
+      <HeroCarrosel />
+      <PlanExplain />
+    </>
   )
 }
