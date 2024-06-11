@@ -1,24 +1,39 @@
-import CardDefault from "../CardImageAndText";
+import PropTypes from 'prop-types';
 
-const PlanExplain = () => {
-	const cardServices = [
-		{
-			title: "Exibição de filmes exclusivos",
-			text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-		}
-	]
+import {
+	Card,
+	CardHeader,
+	CardBody,
+	Typography,
+} from "@material-tailwind/react";
 
+const CardDefault = ({ card }) => {
 	return (
-		<>
-			<div className="bg-customDark p-10">
-				<h1 className="font-bold text-3xl text-white py-5">NOSSOS SERVIÇOS</h1>
-				<hr className="h-0.5 bg-custom-hr w-3/5" />
-				{cardServices.map(card => (
-					<CardDefault key={card.title} card={card} />
-				))}
-			</div>
-		</>
-	)
+		<Card key={card.title} className="p-10 w-[20rem] h-[32rem] flex-shrink-0">
+			<CardHeader color="blue-gray" className="relative h-full">
+				<img
+					src="https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
+					alt={card.title}
+				/>
+			</CardHeader>
+			<CardBody>
+				<Typography variant="h5" color="blue-gray" className="mb-2">
+					{card.title}
+				</Typography>
+				<Typography>
+					{card.text}
+				</Typography>
+			</CardBody>
+		</Card>
+	);
+}
+
+// Defina as propTypes para o componente
+CardDefault.propTypes = {
+	card: PropTypes.shape({
+		title: PropTypes.string.isRequired,
+		text: PropTypes.string.isRequired,
+	}).isRequired,
 };
 
-export default PlanExplain;
+export default CardDefault;
