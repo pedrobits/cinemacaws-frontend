@@ -5,6 +5,8 @@ import {
 } from "react-router-dom";
 import App from "./App";
 import "./index.css";
+import MoviePage from "./pages/moviePage";
+import ProgramacaoPage from "./pages/programacao";
 
 const router = createBrowserRouter([
   {
@@ -13,6 +15,18 @@ const router = createBrowserRouter([
       <App />
     ),
   },
+  {
+    path: "/filmes/sobre/:id",
+    element: (
+      <MoviePage />
+    ),
+  },
+  {
+    path: "/programacao",
+    element: (
+      <ProgramacaoPage />
+    )
+  }
 ]);
 
 createRoot(document.getElementById("root")).render(
