@@ -12,17 +12,10 @@ const Indicacao = ({ classification, width, height, textSize }) => {
 }
 
 Indicacao.propTypes = {
-	classification: PropTypes.oneOf(['livre', 'dez', 'doze', 'quatorze', 'dezesseis', 'dezoito']).isRequired,
+	classification: PropTypes.oneOf(['L', '10', '12', '14', '16', '18']).isRequired,
 	width: PropTypes.string.isRequired,
 	height: PropTypes.string.isRequired,
 	textSize: PropTypes.string.isRequired,
 };
 
 export default Indicacao;
-
-{/* <Indicacao classification="livre" width="100px" height="100px" textSize="24px" />
-<Indicacao classification="dez" width="100px" height="100px" textSize="24px" />
-<Indicacao classification="doze" width="100px" height="100px" textSize="24px" />
-<Indicacao classification="quatorze" width="100px" height="100px" textSize="24px" />
-<Indicacao classification="dezesseis" width="100px" height="100px" textSize="24px" />
-<Indicacao classification="dezoito" width="100px" height="100px" textSize="24px" /> */}
