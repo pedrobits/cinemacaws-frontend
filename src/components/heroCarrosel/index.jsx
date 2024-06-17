@@ -2,7 +2,7 @@ import { Carousel, Typography, Button } from "@material-tailwind/react";
 
 const HeroCarrosel = () => {
 	return (
-		<Carousel autoplay={true} className="h-[40rem] shadow-lg overflow-hidden">
+		<Carousel autoplay={true} loop={true} className="h-[40rem] shadow-lg overflow-hidden">
 			<div className="relative h-full w-full">
 				<img
 					src="https://img.odcdn.com.br/wp-content/uploads/2023/03/unnamed.jpg"
@@ -49,7 +49,7 @@ const HeroCarrosel = () => {
 							color="white"
 							className="mb-12 opacity-80 p-10"
 						>
-							O policial Nicholas Angel sente o cheiro de crime quando os moradores de uma pacata vila de Somerset começam a morrer em acidentes aparentemente terríveis. 
+							O policial Nicholas Angel sente o cheiro de crime quando os moradores de uma pacata vila de Somerset começam a morrer em acidentes aparentemente terríveis.
 							Algo está acontecendo, e ele deve trabalhar com o idiota local Danny Butterman para descobrir o quê.
 						</Typography>
 						<div className="flex gap-2">
@@ -83,13 +83,13 @@ const HeroCarrosel = () => {
 							color="white"
 							className="mb-12 opacity-80"
 						>
-							Nas favelas empobrecidas do Rio de Janeiro nos anos 1970, 
-							dois jovens escolhem caminhos diferentes. 
-							Buscapé (Phellipe Haagensen) é um fotógrafo iniciante que 
-							documenta a crescente violência relacionada às drogas em seu bairro. 
-							José {"Zé"} Pequeno (Douglas Silva) é um traficante ambicioso que usa 
-							Buscapé e suas fotos como uma forma de aumentar sua fama enquanto uma guerra 
-							territorial irrompe com seu rival, Mané Galinha (Leandro Firmino da Hora). 
+							Nas favelas empobrecidas do Rio de Janeiro nos anos 1970,
+							dois jovens escolhem caminhos diferentes.
+							Buscapé (Phellipe Haagensen) é um fotógrafo iniciante que
+							documenta a crescente violência relacionada às drogas em seu bairro.
+							José {"Zé"} Pequeno (Douglas Silva) é um traficante ambicioso que usa
+							Buscapé e suas fotos como uma forma de aumentar sua fama enquanto uma guerra
+							territorial irrompe com seu rival, Mané Galinha (Leandro Firmino da Hora).
 							O filme foi rodado em locações nos bairros mais pobres do Rio.
 						</Typography>
 						<div className="flex gap-2">
