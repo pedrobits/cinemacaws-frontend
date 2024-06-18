@@ -7,8 +7,9 @@ Este repositório contém o front-end do projeto "CineMacaws", desenvolvido em c
 
 * Gerenciamento do catálogo de filmes
 * Gerenciamento de sessões
+* Sistema de Seleção de Cadeira
+* Apresentação de filmes em Cartaz
 * Compra de ingressos
-* Landing Page do cinema
 * Autenticação de usuário
 
 ### Tecnologias Utilizadas:
