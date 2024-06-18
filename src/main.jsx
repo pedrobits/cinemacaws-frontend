@@ -7,6 +7,7 @@ import App from "./App";
 import "./index.css";
 import MoviePage from "./pages/moviePage";
 import ProgramacaoPage from "./pages/programacao";
+import ComprarIngresso from "./pages/comprarIngressos";
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,12 @@ const router = createBrowserRouter([
     path: "/programacao",
     element: (
       <ProgramacaoPage />
+    )
+  },
+  {
+    path: "/comprar-ingressos",
+    element: (
+      <ComprarIngresso />
     )
   }
 ]);
