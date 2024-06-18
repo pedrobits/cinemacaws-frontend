@@ -8,7 +8,7 @@ const PlanExplain = () => {
 			<div className="bg-customDark p-10">
 				<h1 className="font-bold text-3xl text-white py-5">NOSSOS SERVIÇOS</h1>
 				<hr className="h-0.5 bg-custom-hr w-9/12 rounded-3xl" />
-				<div className="flex flex-row h-full gap-5 py-10">
+				<div className="flex flex-col h-full gap-5 py-10 md:flex-row">
 					{cardServices.map(card => (
 						<CardDefault key={card.title} card={card} />
 					))}
