@@ -8,7 +8,7 @@ import {
 
 const CardDefault = ({ card }) => {
 	return (
-		<Card key={card.title} className="p-10 w-[20rem] h-[28rem] flex-shrink-0">
+		<Card key={card.title} className="flex items-start p-10 w-[20rem] h-[25rem]">
 			<CardBody>
 				<Typography variant="h5" color="blue-gray" className="mb-2">
 					{card.title}
