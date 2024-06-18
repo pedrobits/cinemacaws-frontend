@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import CardMovie from "../../components/cardMovie";
 import NavBar from "../../components/navBar";
 import mockFilmesEmProgramacao from "../../scripts/mockFilmesEmProgramacao";
+import Footer from '../../components/Footer';
 
 const ProgramacaoPage = () => {
 	const [filmesEmProgramacao, setFilmesEmProgramacao] = useState([]);
@@ -31,6 +32,7 @@ const ProgramacaoPage = () => {
 					))}
 				</div>
 			</div>
+			<Footer />
 		</>
 	)
 };
